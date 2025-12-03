@@ -1,5 +1,6 @@
 # About the project
 KDBX 4.x format (Keepass >=2.36) is not supported by keepass2john yet, so there is no known way to extract the hash and crack it.
+Developed while playing Mythical ProLab
 
 # Usage
 ```sh
