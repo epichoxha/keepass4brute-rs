@@ -3,7 +3,7 @@ use std::process::Command;
 
 #[test]
 fn cracks_sample_kdbx_with_small_gz_wordlist() {
-    let db = Path::new("tests/RedPass_prev.kdbx");
+    let db = Path::new("tests/****.kdbx");
     let wl = Path::new("tests/wordlist_small.txt.gz");
     if !db.exists() || !wl.exists() {
         return;
@@ -41,7 +41,7 @@ fn cracks_sample_kdbx_with_small_gz_wordlist() {
 
     let stdout = String::from_utf8_lossy(&output.stdout);
     assert!(
-        stdout.trim() == "Chaineishi9cai",
+        stdout.trim() == "******",
         "unexpected stdout: {stdout}"
     );
 }
