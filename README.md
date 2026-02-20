@@ -12,9 +12,14 @@ Developed while playing Mythical Prolab from HTB
 # Basic attack with default settings (uses all CPU cores)
 ./keepass4brute-rs database.kdbx rockyou.txt
 
+# Gzip wordlist support
+./keepass4brute-rs database.kdbx rockyou.txt.gz
+
 # Specify number of threads
 ./keepass4brute-rs database.kdbx rockyou.txt --threads 8
 
-```
+# Resume from an offset, stop after N attempts, and set a timeout
+./keepass4brute-rs database.kdbx rockyou.txt --skip 1000000 --max-attempts 500000 --timeout 120
 
+```
 

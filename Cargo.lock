@@ -500,6 +500,7 @@ dependencies = [
  "anyhow",
  "clap",
  "crossbeam-channel",
+ "flate2",
  "indicatif",
  "keepass",
  "num_cpus",

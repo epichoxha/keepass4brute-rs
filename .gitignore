@@ -1,1 +1,3 @@
 /target
+/tests/*.kdbx
+/tests/*.gz
